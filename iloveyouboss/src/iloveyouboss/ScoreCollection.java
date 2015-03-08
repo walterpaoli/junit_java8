@@ -9,7 +9,7 @@ public class ScoreCollection {
 		scores.add(scoreable);
 	}
 	
-	public int atithmeticMean() {
+	public int arithmeticMean() {
 		int total = scores.stream().mapToInt(Scoreable::getScore).sum();
 		return total / scores.size();
 	}
