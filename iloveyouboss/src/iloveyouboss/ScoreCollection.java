@@ -1,7 +1,6 @@
 package iloveyouboss;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ScoreCollection {
 	private List<Scoreable> scores = new ArrayList<>();
@@ -12,5 +11,6 @@ public class ScoreCollection {
 	
 	public int atithmeticMean() {
 		int total = scores.stream().mapToInt(Scoreable::getScore).sum();
+		return total / scores.size();
 	}
 }
